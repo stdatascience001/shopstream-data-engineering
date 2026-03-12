@@ -1,0 +1,201 @@
+product_id,category,price,brand
+PROD-1,Automotive,465.0,PrimeEdge
+PROD-2,Home & Kitchen,777.15,PlayTime
+PROD-3,Clothing,836.82,TechNova
+PROD-4,Electronics,104.34,UrbanStyle
+PROD-5,Books,684.48,UrbanStyle
+PROD-6,Beauty,559.9,PlayTime
+PROD-7,Sports,265.3,TechNova
+PROD-8,Books,594.9,PrimeEdge
+PROD-9,Toys,454.18,TechNova
+PROD-10,Automotive,929.43,HomeCraft
+PROD-11,Beauty,992.94,NextGen
+PROD-12,Books,752.04,TechNova
+PROD-13,Toys,324.94,PrimeEdge
+PROD-14,Sports,24.61,NextGen
+PROD-15,Electronics,820.32,TechNova
+PROD-16,Automotive,363.44,ReadMore
+PROD-17,Automotive,672.29,GlowPlus
+PROD-18,Books,477.01,HomeCraft
+PROD-19,Home & Kitchen,748.4,UrbanStyle
+PROD-20,Home & Kitchen,855.59,PlayTime
+PROD-21,Clothing,719.38,HomeCraft
+PROD-22,Electronics,253.74,NextGen
+PROD-23,Electronics,338.1,HomeCraft
+PROD-24,Sports,42.79,PlayTime
+PROD-25,Beauty,89.27,PrimeEdge
+PROD-26,Books,289.03,AutoDrive
+PROD-27,Beauty,483.78,GlowPlus
+PROD-28,Clothing,903.24,ReadMore
+PROD-29,Toys,298.3,FitGear
+PROD-30,Automotive,314.08,HomeCraft
+PROD-31,Automotive,89.1,PlayTime
+PROD-32,Toys,117.74,PrimeEdge
+PROD-33,Automotive,253.34,UrbanStyle
+PROD-34,Electronics,267.22,TechNova
+PROD-35,Sports,600.72,FitGear
+PROD-36,Clothing,606.39,TechNova
+PROD-37,Automotive,899.43,TechNova
+PROD-38,Toys,495.8,UrbanStyle
+PROD-39,Home & Kitchen,123.67,HomeCraft
+PROD-40,Books,795.84,ReadMore
+PROD-41,Beauty,609.99,FitGear
+PROD-42,Beauty,811.55,ReadMore
+PROD-43,Electronics,145.4,AutoDrive
+PROD-44,Beauty,430.5,AutoDrive
+PROD-45,Automotive,478.92,AutoDrive
+PROD-46,Electronics,486.7,PrimeEdge
+PROD-47,Beauty,347.41,HomeCraft
+PROD-48,Clothing,876.47,PlayTime
+PROD-49,Home & Kitchen,868.3,ReadMore
+PROD-50,Toys,244.07,PlayTime
+PROD-51,Beauty,495.28,GlowPlus
+PROD-52,Sports,519.45,UrbanStyle
+PROD-53,Automotive,419.38,GlowPlus
+PROD-54,Automotive,652.18,GlowPlus
+PROD-55,Clothing,549.77,TechNova
+PROD-56,Beauty,86.81,PlayTime
+PROD-57,Clothing,392.34,PrimeEdge
+PROD-58,Electronics,837.38,ReadMore
+PROD-59,Toys,323.78,PlayTime
+PROD-60,Books,301.08,FitGear
+PROD-61,Beauty,638.14,ReadMore
+PROD-62,Toys,380.05,HomeCraft
+PROD-63,Home & Kitchen,605.95,PlayTime
+PROD-64,Sports,256.63,ReadMore
+PROD-65,Electronics,333.7,NextGen
+PROD-66,Automotive,690.47,GlowPlus
+PROD-67,Toys,248.08,TechNova
+PROD-68,Beauty,486.03,PrimeEdge
+PROD-69,Electronics,60.47,HomeCraft
+PROD-70,Home & Kitchen,565.86,ReadMore
+PROD-71,Books,966.43,HomeCraft
+PROD-72,Clothing,404.32,PrimeEdge
+PROD-73,Electronics,870.42,HomeCraft
+PROD-74,Home & Kitchen,98.68,HomeCraft
+PROD-75,Electronics,240.3,NextGen
+PROD-76,Books,172.38,PlayTime
+PROD-77,Home & Kitchen,93.31,PrimeEdge
+PROD-78,Beauty,376.43,NextGen
+PROD-79,Sports,129.83,AutoDrive
+PROD-80,Books,692.98,ReadMore
+PROD-81,Home & Kitchen,624.65,PlayTime
+PROD-82,Books,686.01,PlayTime
+PROD-83,Sports,830.75,PlayTime
+PROD-84,Beauty,382.64,GlowPlus
+PROD-85,Electronics,865.33,ReadMore
+PROD-86,Electronics,673.79,UrbanStyle
+PROD-87,Home & Kitchen,599.66,ReadMore
+PROD-88,Sports,946.1,UrbanStyle
+PROD-89,Clothing,429.73,TechNova
+PROD-90,Beauty,898.81,UrbanStyle
+PROD-91,Toys,435.44,PlayTime
+PROD-92,Home & Kitchen,481.12,TechNova
+PROD-93,Automotive,751.15,NextGen
+PROD-94,Electronics,161.85,TechNova
+PROD-95,Beauty,39.44,FitGear
+PROD-96,Toys,141.18,PlayTime
+PROD-97,Sports,599.07,HomeCraft
+PROD-98,Clothing,397.27,NextGen
+PROD-99,Sports,902.8,AutoDrive
+PROD-100,Books,222.66,HomeCraft
+PROD-101,Automotive,294.13,TechNova
+PROD-102,Toys,23.49,NextGen
+PROD-103,Beauty,366.95,ReadMore
+PROD-104,Electronics,235.63,PrimeEdge
+PROD-105,Clothing,141.89,ReadMore
+PROD-106,Books,554.59,UrbanStyle
+PROD-107,Toys,126.52,AutoDrive
+PROD-108,Clothing,894.04,HomeCraft
+PROD-109,Toys,566.73,TechNova
+PROD-110,Sports,46.77,FitGear
+PROD-111,Sports,182.11,HomeCraft
+PROD-112,Home & Kitchen,486.9,ReadMore
+PROD-113,Automotive,106.47,AutoDrive
+PROD-114,Electronics,69.04,AutoDrive
+PROD-115,Clothing,423.82,PlayTime
+PROD-116,Books,376.49,UrbanStyle
+PROD-117,Sports,631.35,PlayTime
+PROD-118,Books,735.35,TechNova
+PROD-119,Clothing,127.24,NextGen
+PROD-120,Clothing,119.5,GlowPlus
+PROD-121,Beauty,437.02,TechNova
+PROD-122,Electronics,873.89,PrimeEdge
+PROD-123,Toys,986.67,PrimeEdge
+PROD-124,Electronics,498.76,NextGen
+PROD-125,Home & Kitchen,533.28,GlowPlus
+PROD-126,Sports,436.48,AutoDrive
+PROD-127,Toys,184.26,UrbanStyle
+PROD-128,Home & Kitchen,478.17,NextGen
+PROD-129,Sports,874.85,PrimeEdge
+PROD-130,Sports,570.34,FitGear
+PROD-131,Beauty,329.28,PlayTime
+PROD-132,Books,445.97,PrimeEdge
+PROD-133,Home & Kitchen,592.46,UrbanStyle
+PROD-134,Clothing,499.53,PrimeEdge
+PROD-135,Electronics,391.66,FitGear
+PROD-136,Clothing,890.42,UrbanStyle
+PROD-137,Home & Kitchen,101.79,GlowPlus
+PROD-138,Toys,955.83,FitGear
+PROD-139,Books,586.55,GlowPlus
+PROD-140,Books,525.2,ReadMore
+PROD-141,Automotive,203.37,ReadMore
+PROD-142,Clothing,507.67,HomeCraft
+PROD-143,Books,585.43,NextGen
+PROD-144,Sports,378.2,AutoDrive
+PROD-145,Books,27.39,FitGear
+PROD-146,Sports,637.31,PlayTime
+PROD-147,Sports,249.27,PrimeEdge
+PROD-148,Toys,32.61,NextGen
+PROD-149,Clothing,636.7,UrbanStyle
+PROD-150,Clothing,383.46,TechNova
+PROD-151,Clothing,355.95,GlowPlus
+PROD-152,Home & Kitchen,326.39,GlowPlus
+PROD-153,Electronics,754.95,UrbanStyle
+PROD-154,Electronics,488.72,HomeCraft
+PROD-155,Clothing,54.28,FitGear
+PROD-156,Books,896.22,PrimeEdge
+PROD-157,Home & Kitchen,143.42,NextGen
+PROD-158,Clothing,511.79,NextGen
+PROD-159,Books,616.63,HomeCraft
+PROD-160,Home & Kitchen,949.55,ReadMore
+PROD-161,Sports,48.37,AutoDrive
+PROD-162,Automotive,184.47,FitGear
+PROD-163,Toys,51.13,AutoDrive
+PROD-164,Home & Kitchen,90.16,AutoDrive
+PROD-165,Automotive,890.07,PrimeEdge
+PROD-166,Clothing,18.0,PrimeEdge
+PROD-167,Sports,454.47,PrimeEdge
+PROD-168,Sports,270.59,UrbanStyle
+PROD-169,Clothing,830.95,GlowPlus
+PROD-170,Sports,199.18,TechNova
+PROD-171,Toys,678.98,HomeCraft
+PROD-172,Books,77.93,GlowPlus
+PROD-173,Toys,917.48,TechNova
+PROD-174,Sports,7.03,UrbanStyle
+PROD-175,Toys,266.66,NextGen
+PROD-176,Sports,244.75,FitGear
+PROD-177,Automotive,138.16,PlayTime
+PROD-178,Sports,509.78,ReadMore
+PROD-179,Toys,888.88,PlayTime
+PROD-180,Books,284.65,PlayTime
+PROD-181,Sports,195.45,PrimeEdge
+PROD-182,Home & Kitchen,162.83,AutoDrive
+PROD-183,Beauty,310.73,ReadMore
+PROD-184,Clothing,386.01,PlayTime
+PROD-185,Home & Kitchen,463.79,TechNova
+PROD-186,Beauty,137.86,PlayTime
+PROD-187,Automotive,64.06,FitGear
+PROD-188,Books,461.98,TechNova
+PROD-189,Sports,240.62,AutoDrive
+PROD-190,Books,897.42,NextGen
+PROD-191,Beauty,643.21,AutoDrive
+PROD-192,Books,662.05,ReadMore
+PROD-193,Automotive,886.25,GlowPlus
+PROD-194,Sports,109.8,FitGear
+PROD-195,Toys,307.29,FitGear
+PROD-196,Clothing,209.13,ReadMore
+PROD-197,Books,859.2,HomeCraft
+PROD-198,Books,820.28,FitGear
+PROD-199,Sports,647.37,PlayTime
+PROD-200,Home & Kitchen,195.11,PrimeEdge

@@ -1,0 +1,22 @@
+===================================================
+Time: 2026-03-11 22:04:07
+===================================================
+
+--- SERVICES STATUS (docker-compose ps) ---
+NAME                   IMAGE                             COMMAND                  SERVICE     CREATED         STATUS                   PORTS
+shopstream_airflow     apache/airflow:2.8.0              "/usr/bin/dumb-init â€¦"   airflow     8 minutes ago   Up 8 minutes             0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp
+shopstream_kafka       confluentinc/cp-kafka:7.5.0       "/etc/confluent/dockâ€¦"   kafka       8 minutes ago   Up 8 minutes             0.0.0.0:9092->9092/tcp, [::]:9092->9092/tcp
+shopstream_superset    apache/superset:3.0.0             "/usr/bin/run-serverâ€¦"   superset    8 minutes ago   Up 8 minutes (healthy)   0.0.0.0:8088->8088/tcp, [::]:8088->8088/tcp
+shopstream_zookeeper   confluentinc/cp-zookeeper:7.5.0   "/etc/confluent/dockâ€¦"   zookeeper   8 minutes ago   Up 8 minutes             2181/tcp, 2888/tcp, 3888/tcp
+Errors:
+time="2026-03-11T22:04:07+05:30" level=warning msg="D:\\shopstream\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+
+
+--- RESOURCE USAGE (docker stats) ---
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+c37f491da304   shopstream_kafka       1.53%     340.3MiB / 7.675GiB   4.33%     17.2kB / 20.4kB   4.1kB / 524kB   80
+3ebff47d950c   shopstream_airflow     11.30%    1.112GiB / 7.675GiB   14.48%    173kB / 1.98MB    741kB / 132MB   17
+090eb9b1adaa   shopstream_zookeeper   0.24%     95.23MiB / 7.675GiB   1.21%     22.2kB / 15.5kB   0B / 512kB      70
+5fc45b45df3a   shopstream_superset    0.04%     174.7MiB / 7.675GiB   2.22%     2.16kB / 126B     0B / 3.62MB     16
+
+

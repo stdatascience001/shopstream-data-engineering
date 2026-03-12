@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: fct_orders
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: order_amount
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
