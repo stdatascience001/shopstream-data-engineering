@@ -1,0 +1,54 @@
+﻿14:59:05  Running with dbt=1.11.7
+14:59:06  Registered adapter: duckdb=1.10.1
+14:59:06  Unable to do partial parsing because saved manifest not found. Starting full parse.
+14:59:07  [WARNING][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `dbt_utils.accepted_range` defined on
+'fct_orders' in package 'shopstream_dbt' (models\marts\schema.yml). Arguments to
+generic tests should be nested under the `arguments` property.
+14:59:07  Found 6 models, 4 data tests, 3 sources, 474 macros
+14:59:07  
+14:59:07  Concurrency: 4 threads (target='dev')
+14:59:07  
+14:59:08  1 of 6 START sql view model main.stg_customers ................................. [RUN]
+14:59:08  2 of 6 START sql view model main.stg_orders .................................... [RUN]
+14:59:08  3 of 6 START sql view model main.stg_products .................................. [RUN]
+14:59:08  3 of 6 ERROR creating sql view model main.stg_products ......................... [ERROR in 0.13s]
+14:59:08  4 of 6 SKIP relation main.dim_products ......................................... [SKIP]
+14:59:08  1 of 6 ERROR creating sql view model main.stg_customers ........................ [ERROR in 0.18s]
+14:59:08  5 of 6 SKIP relation main.dim_customers ........................................ [SKIP]
+14:59:08  2 of 6 OK created sql view model main.stg_orders ............................... [OK in 0.22s]
+14:59:08  6 of 6 SKIP relation main.fct_orders ........................................... [SKIP]
+14:59:08  
+14:59:08  Finished running 3 table models, 3 view models in 0 hours 0 minutes and 0.45 seconds (0.45s).
+14:59:08  
+14:59:08  Completed with 2 errors, 0 partial successes, and 0 warnings:
+14:59:08  
+14:59:08  Failure in model stg_products (models\staging\stg_products.sql)
+14:59:08    Runtime Error in model stg_products (models\staging\stg_products.sql)
+  Binder Error: Referenced column "name" not found in FROM clause!
+  Candidate bindings: "category"
+  
+  LINE 10:     name as product_name,
+               ^
+14:59:08  
+14:59:08    compiled code at target\compiled\shopstream_dbt\models\staging\stg_products.sql
+14:59:08  
+14:59:08  Failure in model stg_customers (models\staging\stg_customers.sql)
+14:59:08    Runtime Error in model stg_customers (models\staging\stg_customers.sql)
+  Binder Error: Referenced column "first_name" not found in FROM clause!
+  Candidate bindings: "signup_date", "customer_id", "city"
+  
+  LINE 10:     first_name || ' ' || last_name as full_name,
+               ^
+14:59:08  
+14:59:08    compiled code at target\compiled\shopstream_dbt\models\staging\stg_customers.sql
+14:59:08  
+14:59:08  Done. PASS=1 WARN=0 ERROR=2 SKIP=3 NO-OP=0 TOTAL=6
+14:59:08  [WARNING][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.

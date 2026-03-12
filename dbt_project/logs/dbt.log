@@ -1,0 +1,1194 @@
+[0m20:22:34.587638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B044710050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B042240690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B045082490>]}
+
+
+============================== 20:22:34.592404 | 1716f19f-b3b5-4b51-ba5e-ad1e3b64fb52 ==============================
+[0m20:22:34.592404 [info ] [MainThread]: Running with dbt=1.11.7
+[0m20:22:34.593149 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m20:22:34.593890 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\shopstream\dbt_project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:22:34.594843 [debug] [MainThread]: Command `dbt run` failed at 20:22:34.594705 after 0.19 seconds
+[0m20:22:34.595244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B045677BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0457FC710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B045622BE0>]}
+[0m20:22:34.595637 [debug] [MainThread]: Flushing usage events
+[0m20:22:36.258663 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:23:06.679210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB5E00C050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB5BB40690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB5E982490>]}
+
+
+============================== 20:23:06.683667 | 7ecb6331-4b1e-440a-97ce-95547b42d0d4 ==============================
+[0m20:23:06.683667 [info ] [MainThread]: Running with dbt=1.11.7
+[0m20:23:06.684386 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init shopstream_dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m20:23:06.696845 [debug] [MainThread]: Starter project path: D:\shopstream\venv\Lib\site-packages\dbt\include\starter_project
+[0m20:23:06.709745 [info ] [MainThread]: 
+Your new dbt project "shopstream_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:23:06.710596 [info ] [MainThread]: Setting up your profile.
+[0m20:24:21.574798 [error] [MainThread]: Encountered an error:
+
+[0m20:24:21.595022 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\shopstream\venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "D:\shopstream\venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "D:\shopstream\venv\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+  File "D:\shopstream\venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\shopstream\venv\Lib\site-packages\dbt\task\init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "D:\shopstream\venv\Lib\site-packages\dbt\task\init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "D:\shopstream\venv\Lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+  File "D:\shopstream\venv\Lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m20:24:21.596239 [debug] [MainThread]: Command `dbt init` failed at 20:24:21.596098 after 75.04 seconds
+[0m20:24:21.596646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB5F12CD60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB60184A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB5EF279B0>]}
+[0m20:24:21.597060 [debug] [MainThread]: Flushing usage events
+[0m20:24:23.273868 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:26:12.064047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF580B0050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF55BA87D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF58A1E5D0>]}
+
+
+============================== 20:26:12.068602 | aa67207d-fd15-42f6-b274-98cbf8c0ebf0 ==============================
+[0m20:26:12.068602 [info ] [MainThread]: Running with dbt=1.11.7
+[0m20:26:12.069326 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\shopstream\\dbt_project\\logs'}
+[0m20:26:12.335066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aa67207d-fd15-42f6-b274-98cbf8c0ebf0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF5842EB10>]}
+[0m20:26:12.403233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aa67207d-fd15-42f6-b274-98cbf8c0ebf0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF58FC7DF0>]}
+[0m20:26:12.405340 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m20:26:12.676999 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m20:26:12.677998 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:26:12.678532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'aa67207d-fd15-42f6-b274-98cbf8c0ebf0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF5A226F50>]}
+[0m20:26:13.944170 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `dbt_utils.accepted_range` defined on
+'fct_orders' in package 'shopstream_dbt' (models\marts\schema.yml). Arguments to
+generic tests should be nested under the `arguments` property.
+[0m20:26:13.944935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'aa67207d-fd15-42f6-b274-98cbf8c0ebf0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF003218B0>]}
+[0m20:26:13.961058 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.shopstream_dbt.stg_orders' (models\staging\stg_orders.sql) depends on a source named 'bronze.orders' which was not found
+[0m20:26:13.961838 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:26:13.962877 [debug] [MainThread]: Command `dbt run` failed at 20:26:13.962736 after 2.07 seconds
+[0m20:26:13.963282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF5911FE70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF004B7150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF003AF930>]}
+[0m20:26:13.963669 [debug] [MainThread]: Flushing usage events
+[0m20:26:15.560567 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:27:01.612736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197343BC2F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019731EBC910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019734DD8410>]}
+
+
+============================== 20:27:01.617061 | 89459b89-ecdd-4480-b08a-e8bc255943be ==============================
+[0m20:27:01.617061 [info ] [MainThread]: Running with dbt=1.11.7
+[0m20:27:01.617602 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\shopstream\\dbt_project\\logs'}
+[0m20:27:01.863299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '89459b89-ecdd-4480-b08a-e8bc255943be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001973473EC40>]}
+[0m20:27:01.931242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '89459b89-ecdd-4480-b08a-e8bc255943be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197352D7DF0>]}
+[0m20:27:01.933394 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m20:27:02.154342 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m20:27:02.155233 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:27:02.155617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '89459b89-ecdd-4480-b08a-e8bc255943be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019736536F50>]}
+[0m20:27:03.423553 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `dbt_utils.accepted_range` defined on
+'fct_orders' in package 'shopstream_dbt' (models\marts\schema.yml). Arguments to
+generic tests should be nested under the `arguments` property.
+[0m20:27:03.424091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '89459b89-ecdd-4480-b08a-e8bc255943be', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001970031D8B0>]}
+[0m20:27:03.440066 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.shopstream_dbt.stg_orders' (models\staging\stg_orders.sql) depends on a source named 'bronze.orders' which was not found
+[0m20:27:03.440657 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:27:03.441403 [debug] [MainThread]: Command `dbt run` failed at 20:27:03.441280 after 1.95 seconds
+[0m20:27:03.441779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019735427E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197004B7150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197003AF930>]}
+[0m20:27:03.442141 [debug] [MainThread]: Flushing usage events
+[0m20:27:05.061140 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:27:41.407363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0026802F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B07F940910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B003098410>]}
+
+
+============================== 20:27:41.411871 | f5ba72c4-52c9-4c5e-b760-ce39e6f15308 ==============================
+[0m20:27:41.411871 [info ] [MainThread]: Running with dbt=1.11.7
+[0m20:27:41.412445 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\shopstream\\dbt_project\\logs'}
+[0m20:27:41.656391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f5ba72c4-52c9-4c5e-b760-ce39e6f15308', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0029FEC40>]}
+[0m20:27:41.724204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f5ba72c4-52c9-4c5e-b760-ce39e6f15308', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B003593DF0>]}
+[0m20:27:41.726245 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m20:27:41.946358 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m20:27:41.947230 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:27:41.947607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f5ba72c4-52c9-4c5e-b760-ce39e6f15308', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B004806F50>]}
+[0m20:27:43.212834 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `dbt_utils.accepted_range` defined on
+'fct_orders' in package 'shopstream_dbt' (models\marts\schema.yml). Arguments to
+generic tests should be nested under the `arguments` property.
+[0m20:27:43.213443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f5ba72c4-52c9-4c5e-b760-ce39e6f15308', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B004C9D9A0>]}
+[0m20:27:43.336206 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.shopstream_dbt.dim_customers' (models\marts\dim_customers.sql) depends on a node named 'stg_customers' which was not found
+[0m20:27:43.336852 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:27:43.337663 [debug] [MainThread]: Command `dbt run` failed at 20:27:43.337538 after 2.06 seconds
+[0m20:27:43.338060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0036E7E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B004F833F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B00482E680>]}
+[0m20:27:43.338429 [debug] [MainThread]: Flushing usage events
+[0m20:27:44.994381 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:29:05.794213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265492902F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026546DA0A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026549C88050>]}
+
+
+============================== 20:29:05.798636 | 5271f69f-7cb7-4cad-8492-9bb65807d777 ==============================
+[0m20:29:05.798636 [info ] [MainThread]: Running with dbt=1.11.7
+[0m20:29:05.799188 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\shopstream\\dbt_project\\logs'}
+[0m20:29:06.044191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5271f69f-7cb7-4cad-8492-9bb65807d777', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026549612B10>]}
+[0m20:29:06.111294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5271f69f-7cb7-4cad-8492-9bb65807d777', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002654A1A7DF0>]}
+[0m20:29:06.113331 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m20:29:06.335623 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m20:29:06.336497 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:29:06.336891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5271f69f-7cb7-4cad-8492-9bb65807d777', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002654B406F50>]}
+[0m20:29:07.624397 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `dbt_utils.accepted_range` defined on
+'fct_orders' in package 'shopstream_dbt' (models\marts\schema.yml). Arguments to
+generic tests should be nested under the `arguments` property.
+[0m20:29:07.624935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '5271f69f-7cb7-4cad-8492-9bb65807d777', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026500320320>]}
+[0m20:29:07.843733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5271f69f-7cb7-4cad-8492-9bb65807d777', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265005BC910>]}
+[0m20:29:07.935473 [debug] [MainThread]: Wrote artifact WritableManifest to D:\shopstream\dbt_project\target\manifest.json
+[0m20:29:07.938412 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\shopstream\dbt_project\target\semantic_manifest.json
+[0m20:29:07.957229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5271f69f-7cb7-4cad-8492-9bb65807d777', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002650077A820>]}
+[0m20:29:07.957793 [info ] [MainThread]: Found 6 models, 4 data tests, 3 sources, 474 macros
+[0m20:29:07.958211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5271f69f-7cb7-4cad-8492-9bb65807d777', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265003EED50>]}
+[0m20:29:07.961741 [info ] [MainThread]: 
+[0m20:29:07.962160 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:29:07.962495 [info ] [MainThread]: 
+[0m20:29:07.963000 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m20:29:07.968276 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_shopstream'
+[0m20:29:08.100724 [debug] [ThreadPool]: Using duckdb connection "list_shopstream"
+[0m20:29:08.101150 [debug] [ThreadPool]: On list_shopstream: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "connection_name": "list_shopstream"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"shopstream"'
+    
+  
+  
+[0m20:29:08.101508 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:29:08.121432 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m20:29:08.122832 [debug] [ThreadPool]: On list_shopstream: Close
+[0m20:29:08.123885 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_shopstream, now create_shopstream_main)
+[0m20:29:08.124705 [debug] [ThreadPool]: Creating schema "database: "shopstream"
+schema: "main"
+"
+[0m20:29:08.132668 [debug] [ThreadPool]: Using duckdb connection "create_shopstream_main"
+[0m20:29:08.133083 [debug] [ThreadPool]: On create_shopstream_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "connection_name": "create_shopstream_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='shopstream'
+        and type='sqlite'
+    
+  
+[0m20:29:08.133396 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:29:08.134416 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m20:29:08.135660 [debug] [ThreadPool]: Using duckdb connection "create_shopstream_main"
+[0m20:29:08.135975 [debug] [ThreadPool]: On create_shopstream_main: BEGIN
+[0m20:29:08.136429 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:29:08.136736 [debug] [ThreadPool]: Using duckdb connection "create_shopstream_main"
+[0m20:29:08.137039 [debug] [ThreadPool]: On create_shopstream_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "connection_name": "create_shopstream_main"} */
+
+    
+    
+        create schema if not exists "shopstream"."main"
+    
+[0m20:29:08.137584 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:29:08.138390 [debug] [ThreadPool]: On create_shopstream_main: COMMIT
+[0m20:29:08.146487 [debug] [ThreadPool]: Using duckdb connection "create_shopstream_main"
+[0m20:29:08.146929 [debug] [ThreadPool]: On create_shopstream_main: COMMIT
+[0m20:29:08.147543 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:29:08.147911 [debug] [ThreadPool]: On create_shopstream_main: Close
+[0m20:29:08.149776 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_shopstream_main'
+[0m20:29:08.154896 [debug] [ThreadPool]: Using duckdb connection "list_shopstream_main"
+[0m20:29:08.155894 [debug] [ThreadPool]: On list_shopstream_main: BEGIN
+[0m20:29:08.156247 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:29:08.156870 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m20:29:08.157219 [debug] [ThreadPool]: Using duckdb connection "list_shopstream_main"
+[0m20:29:08.157541 [debug] [ThreadPool]: On list_shopstream_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "connection_name": "list_shopstream_main"} */
+select
+      'shopstream' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'shopstream'
+  
+[0m20:29:08.160904 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m20:29:08.162094 [debug] [ThreadPool]: On list_shopstream_main: ROLLBACK
+[0m20:29:08.164631 [debug] [ThreadPool]: Failed to rollback 'list_shopstream_main'
+[0m20:29:08.165090 [debug] [ThreadPool]: On list_shopstream_main: Close
+[0m20:29:08.165920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5271f69f-7cb7-4cad-8492-9bb65807d777', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265006FF1D0>]}
+[0m20:29:08.166408 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:29:08.166745 [debug] [MainThread]: On master: BEGIN
+[0m20:29:08.167070 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:29:08.167653 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:29:08.167993 [debug] [MainThread]: On master: COMMIT
+[0m20:29:08.168325 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:29:08.168650 [debug] [MainThread]: On master: COMMIT
+[0m20:29:08.169234 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:29:08.169662 [debug] [MainThread]: On master: Close
+[0m20:29:08.177428 [debug] [Thread-1 (]: Began running node model.shopstream_dbt.stg_customers
+[0m20:29:08.177935 [debug] [Thread-2 (]: Began running node model.shopstream_dbt.stg_orders
+[0m20:29:08.178371 [debug] [Thread-3 (]: Began running node model.shopstream_dbt.stg_products
+[0m20:29:08.178884 [info ] [Thread-1 (]: 1 of 6 START sql view model main.stg_customers ................................. [RUN]
+[0m20:29:08.179522 [info ] [Thread-2 (]: 2 of 6 START sql view model main.stg_orders .................................... [RUN]
+[0m20:29:08.180697 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.shopstream_dbt.stg_customers'
+[0m20:29:08.180161 [info ] [Thread-3 (]: 3 of 6 START sql view model main.stg_products .................................. [RUN]
+[0m20:29:08.181434 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.shopstream_dbt.stg_orders'
+[0m20:29:08.181899 [debug] [Thread-1 (]: Began compiling node model.shopstream_dbt.stg_customers
+[0m20:29:08.182465 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.shopstream_dbt.stg_products'
+[0m20:29:08.182910 [debug] [Thread-2 (]: Began compiling node model.shopstream_dbt.stg_orders
+[0m20:29:08.190087 [debug] [Thread-1 (]: Writing injected SQL for node "model.shopstream_dbt.stg_customers"
+[0m20:29:08.190565 [debug] [Thread-3 (]: Began compiling node model.shopstream_dbt.stg_products
+[0m20:29:08.193258 [debug] [Thread-2 (]: Writing injected SQL for node "model.shopstream_dbt.stg_orders"
+[0m20:29:08.195608 [debug] [Thread-3 (]: Writing injected SQL for node "model.shopstream_dbt.stg_products"
+[0m20:29:08.198584 [debug] [Thread-1 (]: Began executing node model.shopstream_dbt.stg_customers
+[0m20:29:08.227999 [debug] [Thread-1 (]: Writing runtime sql for node "model.shopstream_dbt.stg_customers"
+[0m20:29:08.228966 [debug] [Thread-3 (]: Began executing node model.shopstream_dbt.stg_products
+[0m20:29:08.232053 [debug] [Thread-3 (]: Writing runtime sql for node "model.shopstream_dbt.stg_products"
+[0m20:29:08.232827 [debug] [Thread-2 (]: Began executing node model.shopstream_dbt.stg_orders
+[0m20:29:08.235910 [debug] [Thread-2 (]: Writing runtime sql for node "model.shopstream_dbt.stg_orders"
+[0m20:29:08.236979 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.stg_products"
+[0m20:29:08.237547 [debug] [Thread-3 (]: On model.shopstream_dbt.stg_products: BEGIN
+[0m20:29:08.237969 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:29:08.238844 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.stg_customers"
+[0m20:29:08.239623 [debug] [Thread-2 (]: Using duckdb connection "model.shopstream_dbt.stg_orders"
+[0m20:29:08.240066 [debug] [Thread-1 (]: On model.shopstream_dbt.stg_customers: BEGIN
+[0m20:29:08.240518 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m20:29:08.240997 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: BEGIN
+[0m20:29:08.241464 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:29:08.241933 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.stg_products"
+[0m20:29:08.242397 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:29:08.243066 [debug] [Thread-3 (]: On model.shopstream_dbt.stg_products: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_products"} */
+
+  
+  create view "shopstream"."main"."stg_products__dbt_tmp" as (
+    with source as (
+    select * from 'd:/shopstream/data/bronze/products.csv'
+)
+select
+    product_id,
+    name as product_name,
+    category,
+    price,
+    stock_quantity
+from source
+  );
+
+[0m20:29:08.243567 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:29:08.244425 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.stg_customers"
+[0m20:29:08.244873 [debug] [Thread-1 (]: On model.shopstream_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_customers"} */
+
+  
+  create view "shopstream"."main"."stg_customers__dbt_tmp" as (
+    with source as (
+    select * from 'd:/shopstream/data/bronze/customers.csv'
+)
+select
+    customer_id,
+    first_name || ' ' || last_name as full_name,
+    email,
+    city,
+    country,
+    signup_date
+from source
+  );
+
+[0m20:29:08.245330 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m20:29:08.245944 [debug] [Thread-2 (]: Using duckdb connection "model.shopstream_dbt.stg_orders"
+[0m20:29:08.246360 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_orders"} */
+
+  
+  create view "shopstream"."main"."stg_orders__dbt_tmp" as (
+    SELECT
+    order_id,
+    customer_id,
+    product_id,
+    CAST(quantity AS INTEGER) AS quantity,
+    CAST(amount AS DECIMAL(10,2)) AS order_amount,
+    CAST(order_date AS DATE) AS order_date,
+    UPPER(status) AS order_status
+FROM 'd:/shopstream/data/bronze/orders.csv'
+WHERE order_id IS NOT NULL
+    AND amount > 0
+  );
+
+[0m20:29:08.261873 [debug] [Thread-3 (]: DuckDB adapter: duckdb error: Binder Error: Referenced column "name" not found in FROM clause!
+Candidate bindings: "category"
+
+LINE 10:     name as product_name,
+             ^
+[0m20:29:08.262389 [debug] [Thread-3 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_products"} */
+
+  
+  create view "shopstream"."main"."stg_products__dbt_tmp" as (
+    with source as (
+    select * from 'd:/shopstream/data/bronze/products.csv'
+)
+select
+    product_id,
+    name as product_name,
+    category,
+    price,
+    stock_quantity
+from source
+  );
+
+[0m20:29:08.262778 [debug] [Thread-3 (]: DuckDB adapter: Rolling back transaction.
+[0m20:29:08.263146 [debug] [Thread-3 (]: On model.shopstream_dbt.stg_products: ROLLBACK
+[0m20:29:08.265077 [debug] [Thread-3 (]: Failed to rollback 'model.shopstream_dbt.stg_products'
+[0m20:29:08.265650 [debug] [Thread-3 (]: On model.shopstream_dbt.stg_products: Close
+[0m20:29:08.310710 [debug] [Thread-3 (]: Runtime Error in model stg_products (models\staging\stg_products.sql)
+  Binder Error: Referenced column "name" not found in FROM clause!
+  Candidate bindings: "category"
+  
+  LINE 10:     name as product_name,
+               ^
+[0m20:29:08.312616 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5271f69f-7cb7-4cad-8492-9bb65807d777', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265495CB9D0>]}
+[0m20:29:08.313266 [error] [Thread-3 (]: 3 of 6 ERROR creating sql view model main.stg_products ......................... [[31mERROR[0m in 0.13s]
+[0m20:29:08.313938 [debug] [Thread-3 (]: Finished running node model.shopstream_dbt.stg_products
+[0m20:29:08.314536 [debug] [Thread-7 (]: Marking all children of 'model.shopstream_dbt.stg_products' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_products (models\staging\stg_products.sql)
+  Binder Error: Referenced column "name" not found in FROM clause!
+  Candidate bindings: "category"
+  
+  LINE 10:     name as product_name,
+               ^.
+[0m20:29:08.315825 [debug] [Thread-4 (]: Began running node model.shopstream_dbt.dim_products
+[0m20:29:08.316265 [info ] [Thread-4 (]: 4 of 6 SKIP relation main.dim_products ......................................... [[33mSKIP[0m]
+[0m20:29:08.316729 [debug] [Thread-4 (]: Finished running node model.shopstream_dbt.dim_products
+[0m20:29:08.354783 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Binder Error: Referenced column "first_name" not found in FROM clause!
+Candidate bindings: "signup_date", "customer_id", "city"
+
+LINE 10:     first_name || ' ' || last_name as full_name,
+             ^
+[0m20:29:08.355265 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_customers"} */
+
+  
+  create view "shopstream"."main"."stg_customers__dbt_tmp" as (
+    with source as (
+    select * from 'd:/shopstream/data/bronze/customers.csv'
+)
+select
+    customer_id,
+    first_name || ' ' || last_name as full_name,
+    email,
+    city,
+    country,
+    signup_date
+from source
+  );
+
+[0m20:29:08.355650 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m20:29:08.356014 [debug] [Thread-1 (]: On model.shopstream_dbt.stg_customers: ROLLBACK
+[0m20:29:08.357136 [debug] [Thread-1 (]: Failed to rollback 'model.shopstream_dbt.stg_customers'
+[0m20:29:08.357606 [debug] [Thread-1 (]: On model.shopstream_dbt.stg_customers: Close
+[0m20:29:08.361529 [debug] [Thread-1 (]: Runtime Error in model stg_customers (models\staging\stg_customers.sql)
+  Binder Error: Referenced column "first_name" not found in FROM clause!
+  Candidate bindings: "signup_date", "customer_id", "city"
+  
+  LINE 10:     first_name || ' ' || last_name as full_name,
+               ^
+[0m20:29:08.361981 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5271f69f-7cb7-4cad-8492-9bb65807d777', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026500A4D8D0>]}
+[0m20:29:08.362587 [error] [Thread-1 (]: 1 of 6 ERROR creating sql view model main.stg_customers ........................ [[31mERROR[0m in 0.18s]
+[0m20:29:08.363226 [debug] [Thread-1 (]: Finished running node model.shopstream_dbt.stg_customers
+[0m20:29:08.363845 [debug] [Thread-7 (]: Marking all children of 'model.shopstream_dbt.stg_customers' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_customers (models\staging\stg_customers.sql)
+  Binder Error: Referenced column "first_name" not found in FROM clause!
+  Candidate bindings: "signup_date", "customer_id", "city"
+  
+  LINE 10:     first_name || ' ' || last_name as full_name,
+               ^.
+[0m20:29:08.364504 [debug] [Thread-3 (]: Began running node model.shopstream_dbt.dim_customers
+[0m20:29:08.364949 [info ] [Thread-3 (]: 5 of 6 SKIP relation main.dim_customers ........................................ [[33mSKIP[0m]
+[0m20:29:08.365427 [debug] [Thread-3 (]: Finished running node model.shopstream_dbt.dim_customers
+[0m20:29:08.366558 [debug] [Thread-2 (]: SQL status: OK in 0.120 seconds
+[0m20:29:08.372341 [debug] [Thread-2 (]: Using duckdb connection "model.shopstream_dbt.stg_orders"
+[0m20:29:08.372718 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_orders"} */
+alter view "shopstream"."main"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m20:29:08.373452 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m20:29:08.383862 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: COMMIT
+[0m20:29:08.384313 [debug] [Thread-2 (]: Using duckdb connection "model.shopstream_dbt.stg_orders"
+[0m20:29:08.384666 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: COMMIT
+[0m20:29:08.389991 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m20:29:08.395944 [debug] [Thread-2 (]: Using duckdb connection "model.shopstream_dbt.stg_orders"
+[0m20:29:08.396357 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_orders"} */
+
+      drop view if exists "shopstream"."main"."stg_orders__dbt_backup" cascade
+    
+[0m20:29:08.397036 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m20:29:08.399229 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: Close
+[0m20:29:08.399746 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5271f69f-7cb7-4cad-8492-9bb65807d777', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026500B77A10>]}
+[0m20:29:08.400344 [info ] [Thread-2 (]: 2 of 6 OK created sql view model main.stg_orders ............................... [[32mOK[0m in 0.22s]
+[0m20:29:08.400995 [debug] [Thread-2 (]: Finished running node model.shopstream_dbt.stg_orders
+[0m20:29:08.401698 [debug] [Thread-4 (]: Began running node model.shopstream_dbt.fct_orders
+[0m20:29:08.402156 [info ] [Thread-4 (]: 6 of 6 SKIP relation main.fct_orders ........................................... [[33mSKIP[0m]
+[0m20:29:08.402653 [debug] [Thread-4 (]: Finished running node model.shopstream_dbt.fct_orders
+[0m20:29:08.404283 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:29:08.404642 [debug] [MainThread]: On master: BEGIN
+[0m20:29:08.404939 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:29:08.405481 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:29:08.405797 [debug] [MainThread]: On master: COMMIT
+[0m20:29:08.406097 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:29:08.406389 [debug] [MainThread]: On master: COMMIT
+[0m20:29:08.406828 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:29:08.407139 [debug] [MainThread]: On master: Close
+[0m20:29:08.407510 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:29:08.407792 [debug] [MainThread]: Connection 'create_shopstream_main' was properly closed.
+[0m20:29:08.408063 [debug] [MainThread]: Connection 'list_shopstream_main' was properly closed.
+[0m20:29:08.408353 [debug] [MainThread]: Connection 'model.shopstream_dbt.stg_customers' was properly closed.
+[0m20:29:08.408618 [debug] [MainThread]: Connection 'model.shopstream_dbt.stg_orders' was properly closed.
+[0m20:29:08.408883 [debug] [MainThread]: Connection 'model.shopstream_dbt.stg_products' was properly closed.
+[0m20:29:08.409249 [info ] [MainThread]: 
+[0m20:29:08.409601 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 0.45 seconds (0.45s).
+[0m20:29:08.410773 [debug] [MainThread]: Command end result
+[0m20:29:08.434004 [debug] [MainThread]: Wrote artifact WritableManifest to D:\shopstream\dbt_project\target\manifest.json
+[0m20:29:08.436318 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\shopstream\dbt_project\target\semantic_manifest.json
+[0m20:29:08.442625 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\shopstream\dbt_project\target\run_results.json
+[0m20:29:08.443027 [info ] [MainThread]: 
+[0m20:29:08.443434 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m20:29:08.443805 [info ] [MainThread]: 
+[0m20:29:08.444239 [error] [MainThread]: [31mFailure in model stg_products (models\staging\stg_products.sql)[0m
+[0m20:29:08.444666 [error] [MainThread]:   Runtime Error in model stg_products (models\staging\stg_products.sql)
+  Binder Error: Referenced column "name" not found in FROM clause!
+  Candidate bindings: "category"
+  
+  LINE 10:     name as product_name,
+               ^
+[0m20:29:08.445012 [info ] [MainThread]: 
+[0m20:29:08.445406 [info ] [MainThread]:   compiled code at target\compiled\shopstream_dbt\models\staging\stg_products.sql
+[0m20:29:08.445750 [info ] [MainThread]: 
+[0m20:29:08.446165 [error] [MainThread]: [31mFailure in model stg_customers (models\staging\stg_customers.sql)[0m
+[0m20:29:08.446585 [error] [MainThread]:   Runtime Error in model stg_customers (models\staging\stg_customers.sql)
+  Binder Error: Referenced column "first_name" not found in FROM clause!
+  Candidate bindings: "signup_date", "customer_id", "city"
+  
+  LINE 10:     first_name || ' ' || last_name as full_name,
+               ^
+[0m20:29:08.446937 [info ] [MainThread]: 
+[0m20:29:08.447334 [info ] [MainThread]:   compiled code at target\compiled\shopstream_dbt\models\staging\stg_customers.sql
+[0m20:29:08.447673 [info ] [MainThread]: 
+[0m20:29:08.448047 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=2 SKIP=3 NO-OP=0 TOTAL=6
+[0m20:29:08.448581 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:29:08.449332 [debug] [MainThread]: Command `dbt run` failed at 20:29:08.449219 after 2.83 seconds
+[0m20:29:08.449719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026500BA6DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265495CC1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026500BC7C50>]}
+[0m20:29:08.450104 [debug] [MainThread]: Flushing usage events
+[0m20:29:10.180539 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:30:33.249177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DE560050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DC0487D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DEECE5D0>]}
+
+
+============================== 20:30:33.254044 | a9dca41c-a036-47e5-ad09-ee79859e4d80 ==============================
+[0m20:30:33.254044 [info ] [MainThread]: Running with dbt=1.11.7
+[0m20:30:33.254795 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'D:\\shopstream\\dbt_project\\logs'}
+[0m20:30:33.506110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DE8DEB10>]}
+[0m20:30:33.574655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DF473DF0>]}
+[0m20:30:33.576728 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m20:30:33.817426 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m20:30:33.956807 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m20:30:33.957405 [debug] [MainThread]: Partial parsing: updated file: shopstream_dbt://models\staging\stg_products.sql
+[0m20:30:33.957814 [debug] [MainThread]: Partial parsing: updated file: shopstream_dbt://models\staging\stg_customers.sql
+[0m20:30:34.255618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B580316750>]}
+[0m20:30:34.403134 [debug] [MainThread]: Wrote artifact WritableManifest to D:\shopstream\dbt_project\target\manifest.json
+[0m20:30:34.405253 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\shopstream\dbt_project\target\semantic_manifest.json
+[0m20:30:34.423301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DF4576B0>]}
+[0m20:30:34.423818 [info ] [MainThread]: Found 6 models, 4 data tests, 3 sources, 474 macros
+[0m20:30:34.424387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5800C6EB0>]}
+[0m20:30:34.426524 [info ] [MainThread]: 
+[0m20:30:34.427053 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:30:34.427552 [info ] [MainThread]: 
+[0m20:30:34.428212 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m20:30:34.433475 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_shopstream'
+[0m20:30:34.501310 [debug] [ThreadPool]: Using duckdb connection "list_shopstream"
+[0m20:30:34.501729 [debug] [ThreadPool]: On list_shopstream: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "connection_name": "list_shopstream"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"shopstream"'
+    
+  
+  
+[0m20:30:34.502050 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:30:34.524934 [debug] [ThreadPool]: SQL status: OK in 0.023 seconds
+[0m20:30:34.526274 [debug] [ThreadPool]: On list_shopstream: Close
+[0m20:30:34.526971 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_shopstream, now create_shopstream_main)
+[0m20:30:34.527467 [debug] [ThreadPool]: Creating schema "database: "shopstream"
+schema: "main"
+"
+[0m20:30:34.533632 [debug] [ThreadPool]: Using duckdb connection "create_shopstream_main"
+[0m20:30:34.534026 [debug] [ThreadPool]: On create_shopstream_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "connection_name": "create_shopstream_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='shopstream'
+        and type='sqlite'
+    
+  
+[0m20:30:34.534339 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:30:34.535352 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m20:30:34.536660 [debug] [ThreadPool]: Using duckdb connection "create_shopstream_main"
+[0m20:30:34.536986 [debug] [ThreadPool]: On create_shopstream_main: BEGIN
+[0m20:30:34.537471 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:30:34.537782 [debug] [ThreadPool]: Using duckdb connection "create_shopstream_main"
+[0m20:30:34.538082 [debug] [ThreadPool]: On create_shopstream_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "connection_name": "create_shopstream_main"} */
+
+    
+    
+        create schema if not exists "shopstream"."main"
+    
+[0m20:30:34.538639 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:30:34.539510 [debug] [ThreadPool]: On create_shopstream_main: COMMIT
+[0m20:30:34.539842 [debug] [ThreadPool]: Using duckdb connection "create_shopstream_main"
+[0m20:30:34.540146 [debug] [ThreadPool]: On create_shopstream_main: COMMIT
+[0m20:30:34.540611 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:30:34.540941 [debug] [ThreadPool]: On create_shopstream_main: Close
+[0m20:30:34.542888 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_shopstream_main'
+[0m20:30:34.548784 [debug] [ThreadPool]: Using duckdb connection "list_shopstream_main"
+[0m20:30:34.549281 [debug] [ThreadPool]: On list_shopstream_main: BEGIN
+[0m20:30:34.549634 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:30:34.550273 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m20:30:34.550612 [debug] [ThreadPool]: Using duckdb connection "list_shopstream_main"
+[0m20:30:34.550967 [debug] [ThreadPool]: On list_shopstream_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "connection_name": "list_shopstream_main"} */
+select
+      'shopstream' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'shopstream'
+  
+[0m20:30:34.554310 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m20:30:34.555590 [debug] [ThreadPool]: On list_shopstream_main: ROLLBACK
+[0m20:30:34.556634 [debug] [ThreadPool]: Failed to rollback 'list_shopstream_main'
+[0m20:30:34.556962 [debug] [ThreadPool]: On list_shopstream_main: Close
+[0m20:30:34.557951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5806EF790>]}
+[0m20:30:34.558456 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:30:34.558795 [debug] [MainThread]: On master: BEGIN
+[0m20:30:34.559117 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:30:34.559685 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:30:34.560010 [debug] [MainThread]: On master: COMMIT
+[0m20:30:34.560318 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:30:34.560615 [debug] [MainThread]: On master: COMMIT
+[0m20:30:34.561071 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:30:34.561393 [debug] [MainThread]: On master: Close
+[0m20:30:34.566686 [debug] [Thread-1 (]: Began running node model.shopstream_dbt.stg_customers
+[0m20:30:34.567709 [debug] [Thread-3 (]: Began running node model.shopstream_dbt.stg_products
+[0m20:30:34.568576 [debug] [Thread-2 (]: Began running node model.shopstream_dbt.stg_orders
+[0m20:30:34.567313 [info ] [Thread-1 (]: 1 of 6 START sql view model main.stg_customers ................................. [RUN]
+[0m20:30:34.569704 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.shopstream_dbt.stg_customers'
+[0m20:30:34.570115 [debug] [Thread-1 (]: Began compiling node model.shopstream_dbt.stg_customers
+[0m20:30:34.577219 [debug] [Thread-1 (]: Writing injected SQL for node "model.shopstream_dbt.stg_customers"
+[0m20:30:34.568205 [info ] [Thread-3 (]: 3 of 6 START sql view model main.stg_products .................................. [RUN]
+[0m20:30:34.578243 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.shopstream_dbt.stg_products'
+[0m20:30:34.578652 [debug] [Thread-3 (]: Began compiling node model.shopstream_dbt.stg_products
+[0m20:30:34.569046 [info ] [Thread-2 (]: 2 of 6 START sql view model main.stg_orders .................................... [RUN]
+[0m20:30:34.581793 [debug] [Thread-3 (]: Writing injected SQL for node "model.shopstream_dbt.stg_products"
+[0m20:30:34.582478 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.shopstream_dbt.stg_orders'
+[0m20:30:34.583089 [debug] [Thread-1 (]: Began executing node model.shopstream_dbt.stg_customers
+[0m20:30:34.583572 [debug] [Thread-2 (]: Began compiling node model.shopstream_dbt.stg_orders
+[0m20:30:34.594837 [debug] [Thread-3 (]: Began executing node model.shopstream_dbt.stg_products
+[0m20:30:34.613562 [debug] [Thread-2 (]: Writing injected SQL for node "model.shopstream_dbt.stg_orders"
+[0m20:30:34.618310 [debug] [Thread-1 (]: Writing runtime sql for node "model.shopstream_dbt.stg_customers"
+[0m20:30:34.621292 [debug] [Thread-3 (]: Writing runtime sql for node "model.shopstream_dbt.stg_products"
+[0m20:30:34.622399 [debug] [Thread-2 (]: Began executing node model.shopstream_dbt.stg_orders
+[0m20:30:34.625640 [debug] [Thread-2 (]: Writing runtime sql for node "model.shopstream_dbt.stg_orders"
+[0m20:30:34.626331 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.stg_products"
+[0m20:30:34.626748 [debug] [Thread-3 (]: On model.shopstream_dbt.stg_products: BEGIN
+[0m20:30:34.627105 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:30:34.628084 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.stg_customers"
+[0m20:30:34.628651 [debug] [Thread-1 (]: On model.shopstream_dbt.stg_customers: BEGIN
+[0m20:30:34.629022 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:30:34.629602 [debug] [Thread-2 (]: Using duckdb connection "model.shopstream_dbt.stg_orders"
+[0m20:30:34.630023 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: BEGIN
+[0m20:30:34.630409 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:30:34.630959 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m20:30:34.631370 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.stg_products"
+[0m20:30:34.631807 [debug] [Thread-3 (]: On model.shopstream_dbt.stg_products: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_products"} */
+
+  
+  create view "shopstream"."main"."stg_products__dbt_tmp" as (
+    with source as (
+    select * from 'd:/shopstream/data/bronze/products.csv'
+)
+select
+    product_id,
+    brand as product_name,
+    category,
+    price,
+    10 as stock_quantity
+from source
+  );
+
+[0m20:30:34.632398 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m20:30:34.632820 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.stg_customers"
+[0m20:30:34.633231 [debug] [Thread-1 (]: On model.shopstream_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_customers"} */
+
+  
+  create view "shopstream"."main"."stg_customers__dbt_tmp" as (
+    with source as (
+    select * from 'd:/shopstream/data/bronze/customers.csv'
+)
+select
+    customer_id,
+    name as full_name,
+    email,
+    city,
+    country,
+    signup_date
+from source
+  );
+
+[0m20:30:34.633679 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m20:30:34.634092 [debug] [Thread-2 (]: Using duckdb connection "model.shopstream_dbt.stg_orders"
+[0m20:30:34.634508 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_orders"} */
+
+  
+  create view "shopstream"."main"."stg_orders__dbt_tmp" as (
+    SELECT
+    order_id,
+    customer_id,
+    product_id,
+    CAST(quantity AS INTEGER) AS quantity,
+    CAST(amount AS DECIMAL(10,2)) AS order_amount,
+    CAST(order_date AS DATE) AS order_date,
+    UPPER(status) AS order_status
+FROM 'd:/shopstream/data/bronze/orders.csv'
+WHERE order_id IS NOT NULL
+    AND amount > 0
+  );
+
+[0m20:30:34.645823 [debug] [Thread-3 (]: SQL status: OK in 0.014 seconds
+[0m20:30:34.651836 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.stg_products"
+[0m20:30:34.652257 [debug] [Thread-3 (]: On model.shopstream_dbt.stg_products: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_products"} */
+alter view "shopstream"."main"."stg_products__dbt_tmp" rename to "stg_products"
+[0m20:30:34.652995 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m20:30:34.664100 [debug] [Thread-3 (]: On model.shopstream_dbt.stg_products: COMMIT
+[0m20:30:34.664645 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.stg_products"
+[0m20:30:34.665142 [debug] [Thread-3 (]: On model.shopstream_dbt.stg_products: COMMIT
+[0m20:30:34.669968 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m20:30:34.675799 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.stg_products"
+[0m20:30:34.676254 [debug] [Thread-3 (]: On model.shopstream_dbt.stg_products: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_products"} */
+
+      drop view if exists "shopstream"."main"."stg_products__dbt_backup" cascade
+    
+[0m20:30:34.677041 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m20:30:34.679495 [debug] [Thread-3 (]: On model.shopstream_dbt.stg_products: Close
+[0m20:30:34.681190 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B58044B350>]}
+[0m20:30:34.681820 [info ] [Thread-3 (]: 3 of 6 OK created sql view model main.stg_products ............................. [[32mOK[0m in 0.10s]
+[0m20:30:34.682675 [debug] [Thread-3 (]: Finished running node model.shopstream_dbt.stg_products
+[0m20:30:34.683399 [debug] [Thread-4 (]: Began running node model.shopstream_dbt.dim_products
+[0m20:30:34.683881 [info ] [Thread-4 (]: 4 of 6 START sql table model main.dim_products ................................. [RUN]
+[0m20:30:34.684584 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.shopstream_dbt.dim_products'
+[0m20:30:34.684962 [debug] [Thread-4 (]: Began compiling node model.shopstream_dbt.dim_products
+[0m20:30:34.687318 [debug] [Thread-4 (]: Writing injected SQL for node "model.shopstream_dbt.dim_products"
+[0m20:30:34.688518 [debug] [Thread-4 (]: Began executing node model.shopstream_dbt.dim_products
+[0m20:30:34.709319 [debug] [Thread-4 (]: Writing runtime sql for node "model.shopstream_dbt.dim_products"
+[0m20:30:34.710839 [debug] [Thread-4 (]: Using duckdb connection "model.shopstream_dbt.dim_products"
+[0m20:30:34.711534 [debug] [Thread-4 (]: On model.shopstream_dbt.dim_products: BEGIN
+[0m20:30:34.711931 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:30:34.712756 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m20:30:34.713388 [debug] [Thread-4 (]: Using duckdb connection "model.shopstream_dbt.dim_products"
+[0m20:30:34.714000 [debug] [Thread-4 (]: On model.shopstream_dbt.dim_products: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.dim_products"} */
+
+  
+    
+    
+
+    create  table
+      "shopstream"."main"."dim_products__dbt_tmp"
+  
+    as (
+      SELECT
+    product_id,
+    product_name,
+    category,
+    price,
+    stock_quantity
+FROM "shopstream"."main"."stg_products"
+    );
+  
+  
+[0m20:30:34.716065 [debug] [Thread-2 (]: SQL status: OK in 0.081 seconds
+[0m20:30:34.719463 [debug] [Thread-2 (]: Using duckdb connection "model.shopstream_dbt.stg_orders"
+[0m20:30:34.719991 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_orders"} */
+alter view "shopstream"."main"."stg_orders" rename to "stg_orders__dbt_backup"
+[0m20:30:34.720409 [debug] [Thread-1 (]: SQL status: OK in 0.087 seconds
+[0m20:30:34.723380 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.stg_customers"
+[0m20:30:34.723790 [debug] [Thread-1 (]: On model.shopstream_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_customers"} */
+alter view "shopstream"."main"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m20:30:34.724380 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m20:30:34.730878 [debug] [Thread-2 (]: Using duckdb connection "model.shopstream_dbt.stg_orders"
+[0m20:30:34.731357 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m20:30:34.731825 [debug] [Thread-4 (]: SQL status: OK in 0.017 seconds
+[0m20:30:34.732250 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_orders"} */
+alter view "shopstream"."main"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m20:30:34.733764 [debug] [Thread-1 (]: On model.shopstream_dbt.stg_customers: COMMIT
+[0m20:30:34.736791 [debug] [Thread-4 (]: Using duckdb connection "model.shopstream_dbt.dim_products"
+[0m20:30:34.737421 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.stg_customers"
+[0m20:30:34.737872 [debug] [Thread-4 (]: On model.shopstream_dbt.dim_products: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.dim_products"} */
+alter table "shopstream"."main"."dim_products__dbt_tmp" rename to "dim_products"
+[0m20:30:34.738284 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m20:30:34.738759 [debug] [Thread-1 (]: On model.shopstream_dbt.stg_customers: COMMIT
+[0m20:30:34.742605 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: COMMIT
+[0m20:30:34.743339 [debug] [Thread-2 (]: Using duckdb connection "model.shopstream_dbt.stg_orders"
+[0m20:30:34.743773 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: COMMIT
+[0m20:30:34.744219 [debug] [Thread-4 (]: SQL status: OK in 0.005 seconds
+[0m20:30:34.749173 [debug] [Thread-4 (]: On model.shopstream_dbt.dim_products: COMMIT
+[0m20:30:34.749750 [debug] [Thread-4 (]: Using duckdb connection "model.shopstream_dbt.dim_products"
+[0m20:30:34.750184 [debug] [Thread-4 (]: On model.shopstream_dbt.dim_products: COMMIT
+[0m20:30:34.750687 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m20:30:34.753628 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.stg_customers"
+[0m20:30:34.754070 [debug] [Thread-1 (]: On model.shopstream_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_customers"} */
+
+      drop view if exists "shopstream"."main"."stg_customers__dbt_backup" cascade
+    
+[0m20:30:34.754687 [debug] [Thread-2 (]: SQL status: OK in 0.010 seconds
+[0m20:30:34.757433 [debug] [Thread-2 (]: Using duckdb connection "model.shopstream_dbt.stg_orders"
+[0m20:30:34.758003 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.stg_orders"} */
+
+      drop view if exists "shopstream"."main"."stg_orders__dbt_backup" cascade
+    
+[0m20:30:34.758776 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m20:30:34.759295 [debug] [Thread-4 (]: SQL status: OK in 0.009 seconds
+[0m20:30:34.761029 [debug] [Thread-1 (]: On model.shopstream_dbt.stg_customers: Close
+[0m20:30:34.764366 [debug] [Thread-4 (]: Using duckdb connection "model.shopstream_dbt.dim_products"
+[0m20:30:34.765140 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B580596DB0>]}
+[0m20:30:34.765587 [debug] [Thread-4 (]: On model.shopstream_dbt.dim_products: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.dim_products"} */
+
+      drop table if exists "shopstream"."main"."dim_products__dbt_backup" cascade
+    
+[0m20:30:34.766225 [debug] [Thread-2 (]: SQL status: OK in 0.008 seconds
+[0m20:30:34.767418 [info ] [Thread-1 (]: 1 of 6 OK created sql view model main.stg_customers ............................ [[32mOK[0m in 0.20s]
+[0m20:30:34.770177 [debug] [Thread-2 (]: On model.shopstream_dbt.stg_orders: Close
+[0m20:30:34.770939 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m20:30:34.771621 [debug] [Thread-1 (]: Finished running node model.shopstream_dbt.stg_customers
+[0m20:30:34.772319 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5808FFA70>]}
+[0m20:30:34.773666 [debug] [Thread-4 (]: On model.shopstream_dbt.dim_products: Close
+[0m20:30:34.774423 [info ] [Thread-2 (]: 2 of 6 OK created sql view model main.stg_orders ............................... [[32mOK[0m in 0.19s]
+[0m20:30:34.775238 [debug] [Thread-3 (]: Began running node model.shopstream_dbt.dim_customers
+[0m20:30:34.775891 [debug] [Thread-2 (]: Finished running node model.shopstream_dbt.stg_orders
+[0m20:30:34.776400 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5807C6550>]}
+[0m20:30:34.776951 [info ] [Thread-3 (]: 5 of 6 START sql table model main.dim_customers ................................ [RUN]
+[0m20:30:34.778255 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.shopstream_dbt.stg_products, now model.shopstream_dbt.dim_customers)
+[0m20:30:34.777813 [info ] [Thread-4 (]: 4 of 6 OK created sql table model main.dim_products ............................ [[32mOK[0m in 0.09s]
+[0m20:30:34.778818 [debug] [Thread-3 (]: Began compiling node model.shopstream_dbt.dim_customers
+[0m20:30:34.779506 [debug] [Thread-4 (]: Finished running node model.shopstream_dbt.dim_products
+[0m20:30:34.782299 [debug] [Thread-3 (]: Writing injected SQL for node "model.shopstream_dbt.dim_customers"
+[0m20:30:34.783696 [debug] [Thread-3 (]: Began executing node model.shopstream_dbt.dim_customers
+[0m20:30:34.786760 [debug] [Thread-3 (]: Writing runtime sql for node "model.shopstream_dbt.dim_customers"
+[0m20:30:34.787653 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.dim_customers"
+[0m20:30:34.788035 [debug] [Thread-3 (]: On model.shopstream_dbt.dim_customers: BEGIN
+[0m20:30:34.788380 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:30:34.789093 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m20:30:34.789505 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.dim_customers"
+[0m20:30:34.789909 [debug] [Thread-3 (]: On model.shopstream_dbt.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.dim_customers"} */
+
+  
+    
+    
+
+    create  table
+      "shopstream"."main"."dim_customers__dbt_tmp"
+  
+    as (
+      SELECT
+    customer_id,
+    full_name,
+    email,
+    city,
+    country,
+    signup_date
+FROM "shopstream"."main"."stg_customers"
+    );
+  
+  
+[0m20:30:34.913016 [debug] [Thread-3 (]: SQL status: OK in 0.123 seconds
+[0m20:30:34.916326 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.dim_customers"
+[0m20:30:34.916758 [debug] [Thread-3 (]: On model.shopstream_dbt.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.dim_customers"} */
+alter table "shopstream"."main"."dim_customers__dbt_tmp" rename to "dim_customers"
+[0m20:30:34.917499 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m20:30:34.918987 [debug] [Thread-3 (]: On model.shopstream_dbt.dim_customers: COMMIT
+[0m20:30:34.919370 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.dim_customers"
+[0m20:30:34.919724 [debug] [Thread-3 (]: On model.shopstream_dbt.dim_customers: COMMIT
+[0m20:30:34.976982 [debug] [Thread-3 (]: SQL status: OK in 0.057 seconds
+[0m20:30:34.982855 [debug] [Thread-3 (]: Using duckdb connection "model.shopstream_dbt.dim_customers"
+[0m20:30:34.983896 [debug] [Thread-3 (]: On model.shopstream_dbt.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.dim_customers"} */
+
+      drop table if exists "shopstream"."main"."dim_customers__dbt_backup" cascade
+    
+[0m20:30:34.985587 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m20:30:34.988946 [debug] [Thread-3 (]: On model.shopstream_dbt.dim_customers: Close
+[0m20:30:34.990021 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5805CBCB0>]}
+[0m20:30:34.991328 [info ] [Thread-3 (]: 5 of 6 OK created sql table model main.dim_customers ........................... [[32mOK[0m in 0.21s]
+[0m20:30:34.993037 [debug] [Thread-3 (]: Finished running node model.shopstream_dbt.dim_customers
+[0m20:30:34.994487 [debug] [Thread-1 (]: Began running node model.shopstream_dbt.fct_orders
+[0m20:30:34.995409 [info ] [Thread-1 (]: 6 of 6 START sql table model main.fct_orders ................................... [RUN]
+[0m20:30:34.996605 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shopstream_dbt.stg_customers, now model.shopstream_dbt.fct_orders)
+[0m20:30:34.997337 [debug] [Thread-1 (]: Began compiling node model.shopstream_dbt.fct_orders
+[0m20:30:35.001887 [debug] [Thread-1 (]: Writing injected SQL for node "model.shopstream_dbt.fct_orders"
+[0m20:30:35.003166 [debug] [Thread-1 (]: Began executing node model.shopstream_dbt.fct_orders
+[0m20:30:35.007758 [debug] [Thread-1 (]: Writing runtime sql for node "model.shopstream_dbt.fct_orders"
+[0m20:30:35.008992 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.fct_orders"
+[0m20:30:35.009493 [debug] [Thread-1 (]: On model.shopstream_dbt.fct_orders: BEGIN
+[0m20:30:35.009918 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:30:35.010695 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:30:35.011176 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.fct_orders"
+[0m20:30:35.011667 [debug] [Thread-1 (]: On model.shopstream_dbt.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.fct_orders"} */
+
+  
+    
+    
+
+    create  table
+      "shopstream"."main"."fct_orders__dbt_tmp"
+  
+    as (
+      SELECT
+    o.order_id,
+    o.order_date,
+    o.order_amount,
+    o.order_status,
+    c.customer_id,
+    c.country AS customer_country,
+    p.category AS product_category
+FROM "shopstream"."main"."stg_orders" o
+LEFT JOIN "shopstream"."main"."dim_customers" c USING (customer_id)
+LEFT JOIN "shopstream"."main"."dim_products" p USING (product_id)
+    );
+  
+  
+[0m20:30:35.139201 [debug] [Thread-1 (]: SQL status: OK in 0.127 seconds
+[0m20:30:35.142172 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.fct_orders"
+[0m20:30:35.142560 [debug] [Thread-1 (]: On model.shopstream_dbt.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.fct_orders"} */
+alter table "shopstream"."main"."fct_orders__dbt_tmp" rename to "fct_orders"
+[0m20:30:35.143258 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:30:35.144669 [debug] [Thread-1 (]: On model.shopstream_dbt.fct_orders: COMMIT
+[0m20:30:35.145053 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.fct_orders"
+[0m20:30:35.145403 [debug] [Thread-1 (]: On model.shopstream_dbt.fct_orders: COMMIT
+[0m20:30:35.187811 [debug] [Thread-1 (]: SQL status: OK in 0.042 seconds
+[0m20:30:35.190723 [debug] [Thread-1 (]: Using duckdb connection "model.shopstream_dbt.fct_orders"
+[0m20:30:35.191198 [debug] [Thread-1 (]: On model.shopstream_dbt.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "model.shopstream_dbt.fct_orders"} */
+
+      drop table if exists "shopstream"."main"."fct_orders__dbt_backup" cascade
+    
+[0m20:30:35.191972 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:30:35.193588 [debug] [Thread-1 (]: On model.shopstream_dbt.fct_orders: Close
+[0m20:30:35.194161 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9dca41c-a036-47e5-ad09-ee79859e4d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5818D7350>]}
+[0m20:30:35.194758 [info ] [Thread-1 (]: 6 of 6 OK created sql table model main.fct_orders .............................. [[32mOK[0m in 0.20s]
+[0m20:30:35.195636 [debug] [Thread-1 (]: Finished running node model.shopstream_dbt.fct_orders
+[0m20:30:35.197535 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:30:35.198215 [debug] [MainThread]: On master: BEGIN
+[0m20:30:35.198576 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:30:35.199284 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:30:35.199629 [debug] [MainThread]: On master: COMMIT
+[0m20:30:35.199946 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:30:35.200248 [debug] [MainThread]: On master: COMMIT
+[0m20:30:35.200759 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:30:35.201107 [debug] [MainThread]: On master: Close
+[0m20:30:35.201523 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:30:35.201815 [debug] [MainThread]: Connection 'create_shopstream_main' was properly closed.
+[0m20:30:35.202145 [debug] [MainThread]: Connection 'list_shopstream_main' was properly closed.
+[0m20:30:35.202657 [debug] [MainThread]: Connection 'model.shopstream_dbt.fct_orders' was properly closed.
+[0m20:30:35.203228 [debug] [MainThread]: Connection 'model.shopstream_dbt.dim_customers' was properly closed.
+[0m20:30:35.203540 [debug] [MainThread]: Connection 'model.shopstream_dbt.stg_orders' was properly closed.
+[0m20:30:35.203830 [debug] [MainThread]: Connection 'model.shopstream_dbt.dim_products' was properly closed.
+[0m20:30:35.204254 [info ] [MainThread]: 
+[0m20:30:35.205020 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 0.78 seconds (0.78s).
+[0m20:30:35.207212 [debug] [MainThread]: Command end result
+[0m20:30:35.233307 [debug] [MainThread]: Wrote artifact WritableManifest to D:\shopstream\dbt_project\target\manifest.json
+[0m20:30:35.235923 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\shopstream\dbt_project\target\semantic_manifest.json
+[0m20:30:35.243145 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\shopstream\dbt_project\target\run_results.json
+[0m20:30:35.243612 [info ] [MainThread]: 
+[0m20:30:35.244215 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:30:35.244768 [info ] [MainThread]: 
+[0m20:30:35.245292 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m20:30:35.246347 [debug] [MainThread]: Command `dbt run` succeeded at 20:30:35.246206 after 2.15 seconds
+[0m20:30:35.246754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DC798B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5802A3350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5818D7F50>]}
+[0m20:30:35.247140 [debug] [MainThread]: Flushing usage events
+[0m20:30:37.191766 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:30:39.679283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB30550050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB2E0487D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB30EBE5D0>]}
+
+
+============================== 20:30:39.683942 | 2d3e1a2f-6964-4087-aca2-e59a6f9852a0 ==============================
+[0m20:30:39.683942 [info ] [MainThread]: Running with dbt=1.11.7
+[0m20:30:39.684705 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'log_path': 'D:\\shopstream\\dbt_project\\logs'}
+[0m20:30:39.930927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2d3e1a2f-6964-4087-aca2-e59a6f9852a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB308CEB10>]}
+[0m20:30:39.998895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2d3e1a2f-6964-4087-aca2-e59a6f9852a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB31463DF0>]}
+[0m20:30:40.001015 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m20:30:40.223175 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m20:30:40.385361 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:30:40.385754 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m20:30:40.386044 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:30:40.433934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2d3e1a2f-6964-4087-aca2-e59a6f9852a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB327B6F50>]}
+[0m20:30:40.523919 [debug] [MainThread]: Wrote artifact WritableManifest to D:\shopstream\dbt_project\target\manifest.json
+[0m20:30:40.526077 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\shopstream\dbt_project\target\semantic_manifest.json
+[0m20:30:40.557205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2d3e1a2f-6964-4087-aca2-e59a6f9852a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB004A3980>]}
+[0m20:30:40.557823 [info ] [MainThread]: Found 6 models, 4 data tests, 3 sources, 474 macros
+[0m20:30:40.558405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d3e1a2f-6964-4087-aca2-e59a6f9852a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB0052DEF0>]}
+[0m20:30:40.560540 [info ] [MainThread]: 
+[0m20:30:40.561052 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:30:40.561649 [info ] [MainThread]: 
+[0m20:30:40.563155 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m20:30:40.572047 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_shopstream_main'
+[0m20:30:40.717660 [debug] [ThreadPool]: Using duckdb connection "list_shopstream_main"
+[0m20:30:40.718110 [debug] [ThreadPool]: On list_shopstream_main: BEGIN
+[0m20:30:40.718468 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:30:40.767357 [debug] [ThreadPool]: SQL status: OK in 0.049 seconds
+[0m20:30:40.768255 [debug] [ThreadPool]: Using duckdb connection "list_shopstream_main"
+[0m20:30:40.768884 [debug] [ThreadPool]: On list_shopstream_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "connection_name": "list_shopstream_main"} */
+select
+      'shopstream' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'shopstream'
+  
+[0m20:30:40.774817 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m20:30:40.776629 [debug] [ThreadPool]: On list_shopstream_main: ROLLBACK
+[0m20:30:40.778382 [debug] [ThreadPool]: Failed to rollback 'list_shopstream_main'
+[0m20:30:40.779137 [debug] [ThreadPool]: On list_shopstream_main: Close
+[0m20:30:40.781555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d3e1a2f-6964-4087-aca2-e59a6f9852a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB006F7110>]}
+[0m20:30:40.782324 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:30:40.782757 [debug] [MainThread]: On master: BEGIN
+[0m20:30:40.783074 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:30:40.783901 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:30:40.784292 [debug] [MainThread]: On master: COMMIT
+[0m20:30:40.784781 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:30:40.785329 [debug] [MainThread]: On master: COMMIT
+[0m20:30:40.785998 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:30:40.786340 [debug] [MainThread]: On master: Close
+[0m20:30:40.791018 [debug] [Thread-1 (]: Began running node test.shopstream_dbt.dbt_utils_accepted_range_fct_orders_order_amount__0.a5c6cfbe9d
+[0m20:30:40.791562 [debug] [Thread-4 (]: Began running node test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5
+[0m20:30:40.792091 [debug] [Thread-3 (]: Began running node test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0
+[0m20:30:40.792545 [debug] [Thread-2 (]: Began running node test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f
+[0m20:30:40.793044 [info ] [Thread-1 (]: 1 of 4 START test dbt_utils_accepted_range_fct_orders_order_amount__0 .......... [RUN]
+[0m20:30:40.793549 [info ] [Thread-4 (]: 4 of 4 START test unique_fct_orders_order_id ................................... [RUN]
+[0m20:30:40.796155 [debug] [Thread-1 (]: Acquiring new duckdb connection 'test.shopstream_dbt.dbt_utils_accepted_range_fct_orders_order_amount__0.a5c6cfbe9d'
+[0m20:30:40.797002 [debug] [Thread-4 (]: Acquiring new duckdb connection 'test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5'
+[0m20:30:40.794405 [info ] [Thread-3 (]: 3 of 4 START test not_null_fct_orders_order_id ................................. [RUN]
+[0m20:30:40.797984 [debug] [Thread-1 (]: Began compiling node test.shopstream_dbt.dbt_utils_accepted_range_fct_orders_order_amount__0.a5c6cfbe9d
+[0m20:30:40.798528 [debug] [Thread-4 (]: Began compiling node test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5
+[0m20:30:40.795111 [info ] [Thread-2 (]: 2 of 4 START test not_null_fct_orders_order_amount ............................. [RUN]
+[0m20:30:40.799627 [debug] [Thread-3 (]: Acquiring new duckdb connection 'test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0'
+[0m20:30:40.822237 [debug] [Thread-4 (]: Writing injected SQL for node "test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5"
+[0m20:30:40.822977 [debug] [Thread-2 (]: Acquiring new duckdb connection 'test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f'
+[0m20:30:40.823538 [debug] [Thread-3 (]: Began compiling node test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0
+[0m20:30:40.824167 [debug] [Thread-2 (]: Began compiling node test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f
+[0m20:30:40.839215 [debug] [Thread-3 (]: Writing injected SQL for node "test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0"
+[0m20:30:40.850641 [debug] [Thread-2 (]: Writing injected SQL for node "test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f"
+[0m20:30:40.854488 [debug] [Thread-4 (]: Began executing node test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5
+[0m20:30:40.877989 [debug] [Thread-4 (]: Writing runtime sql for node "test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5"
+[0m20:30:40.879957 [debug] [Thread-2 (]: Began executing node test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f
+[0m20:30:40.884803 [debug] [Thread-2 (]: Writing runtime sql for node "test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f"
+[0m20:30:40.885483 [debug] [Thread-3 (]: Began executing node test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0
+[0m20:30:40.888963 [debug] [Thread-3 (]: Writing runtime sql for node "test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0"
+[0m20:30:40.889571 [debug] [Thread-4 (]: Using duckdb connection "test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5"
+[0m20:30:40.890285 [debug] [Thread-4 (]: On test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5: BEGIN
+[0m20:30:40.891473 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:30:40.892465 [debug] [Thread-2 (]: Using duckdb connection "test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f"
+[0m20:30:40.893942 [debug] [Thread-2 (]: On test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f: BEGIN
+[0m20:30:40.894902 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:30:40.895648 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m20:30:40.896434 [debug] [Thread-3 (]: Using duckdb connection "test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0"
+[0m20:30:40.897550 [debug] [Thread-4 (]: Using duckdb connection "test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5"
+[0m20:30:40.898115 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m20:30:40.898715 [debug] [Thread-3 (]: On test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0: BEGIN
+[0m20:30:40.899275 [debug] [Thread-4 (]: On test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from "shopstream"."main"."fct_orders"
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:30:40.899783 [debug] [Thread-2 (]: Using duckdb connection "test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f"
+[0m20:30:40.900305 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:30:40.901231 [debug] [Thread-2 (]: On test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_amount
+from "shopstream"."main"."fct_orders"
+where order_amount is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:30:40.902496 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m20:30:40.902989 [debug] [Thread-3 (]: Using duckdb connection "test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0"
+[0m20:30:40.903396 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m20:30:40.903879 [debug] [Thread-3 (]: On test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shopstream", "target_name": "dev", "node_id": "test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from "shopstream"."main"."fct_orders"
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:30:40.910363 [debug] [Thread-2 (]: On test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f: ROLLBACK
+[0m20:30:40.914716 [debug] [Thread-2 (]: Failed to rollback 'test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f'
+[0m20:30:40.916524 [debug] [Thread-2 (]: On test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f: Close
+[0m20:30:40.919535 [debug] [Thread-3 (]: SQL status: OK in 0.008 seconds
+[0m20:30:40.920076 [debug] [Thread-4 (]: SQL status: OK in 0.019 seconds
+[0m20:30:40.918938 [info ] [Thread-2 (]: 2 of 4 PASS not_null_fct_orders_order_amount ................................... [[32mPASS[0m in 0.10s]
+[0m20:30:40.922262 [debug] [Thread-3 (]: On test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0: ROLLBACK
+[0m20:30:40.923543 [debug] [Thread-2 (]: Finished running node test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f
+[0m20:30:40.925016 [debug] [Thread-4 (]: On test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5: ROLLBACK
+[0m20:30:40.925800 [debug] [Thread-3 (]: Failed to rollback 'test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0'
+[0m20:30:40.926635 [debug] [Thread-4 (]: Failed to rollback 'test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5'
+[0m20:30:40.927050 [debug] [Thread-3 (]: On test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0: Close
+[0m20:30:40.927486 [debug] [Thread-4 (]: On test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5: Close
+[0m20:30:40.928264 [info ] [Thread-3 (]: 3 of 4 PASS not_null_fct_orders_order_id ....................................... [[32mPASS[0m in 0.13s]
+[0m20:30:40.929955 [debug] [Thread-3 (]: Finished running node test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0
+[0m20:30:40.928922 [info ] [Thread-4 (]: 4 of 4 PASS unique_fct_orders_order_id ......................................... [[32mPASS[0m in 0.13s]
+[0m20:30:40.931231 [debug] [Thread-4 (]: Finished running node test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5
+[0m20:30:40.945083 [debug] [Thread-1 (]: Compilation Error in test dbt_utils_accepted_range_fct_orders_order_amount__0 (models\marts\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m20:30:40.945738 [error] [Thread-1 (]: 1 of 4 ERROR dbt_utils_accepted_range_fct_orders_order_amount__0 ............... [[31mERROR[0m in 0.15s]
+[0m20:30:40.946537 [debug] [Thread-1 (]: Finished running node test.shopstream_dbt.dbt_utils_accepted_range_fct_orders_order_amount__0.a5c6cfbe9d
+[0m20:30:40.947190 [debug] [Thread-7 (]: Marking all children of 'test.shopstream_dbt.dbt_utils_accepted_range_fct_orders_order_amount__0.a5c6cfbe9d' to be skipped because of status 'error'.  Reason: Compilation Error in test dbt_utils_accepted_range_fct_orders_order_amount__0 (models\marts\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps"..
+[0m20:30:40.949236 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:30:40.949627 [debug] [MainThread]: On master: BEGIN
+[0m20:30:40.949946 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:30:40.950591 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:30:40.950937 [debug] [MainThread]: On master: COMMIT
+[0m20:30:40.951249 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:30:40.951566 [debug] [MainThread]: On master: COMMIT
+[0m20:30:40.952071 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:30:40.952490 [debug] [MainThread]: On master: Close
+[0m20:30:40.952918 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:30:40.953227 [debug] [MainThread]: Connection 'list_shopstream_main' was properly closed.
+[0m20:30:40.953616 [debug] [MainThread]: Connection 'test.shopstream_dbt.dbt_utils_accepted_range_fct_orders_order_amount__0.a5c6cfbe9d' was properly closed.
+[0m20:30:40.954018 [debug] [MainThread]: Connection 'test.shopstream_dbt.unique_fct_orders_order_id.523ddb6ce5' was properly closed.
+[0m20:30:40.954327 [debug] [MainThread]: Connection 'test.shopstream_dbt.not_null_fct_orders_order_id.4e687af8d0' was properly closed.
+[0m20:30:40.954606 [debug] [MainThread]: Connection 'test.shopstream_dbt.not_null_fct_orders_order_amount.ca14a44d1f' was properly closed.
+[0m20:30:40.955055 [info ] [MainThread]: 
+[0m20:30:40.955714 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 0.39 seconds (0.39s).
+[0m20:30:40.957769 [debug] [MainThread]: Command end result
+[0m20:30:40.992046 [debug] [MainThread]: Wrote artifact WritableManifest to D:\shopstream\dbt_project\target\manifest.json
+[0m20:30:40.994800 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\shopstream\dbt_project\target\semantic_manifest.json
+[0m20:30:41.003783 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\shopstream\dbt_project\target\run_results.json
+[0m20:30:41.004210 [info ] [MainThread]: 
+[0m20:30:41.004783 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m20:30:41.005269 [info ] [MainThread]: 
+[0m20:30:41.005791 [error] [MainThread]: [31mFailure in test dbt_utils_accepted_range_fct_orders_order_amount__0 (models\marts\schema.yml)[0m
+[0m20:30:41.006301 [error] [MainThread]:   Compilation Error in test dbt_utils_accepted_range_fct_orders_order_amount__0 (models\marts\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m20:30:41.006757 [info ] [MainThread]: 
+[0m20:30:41.007220 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=4
+[0m20:30:41.008076 [debug] [MainThread]: Command `dbt test` failed at 20:30:41.007955 after 1.45 seconds
+[0m20:30:41.008520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB313EE390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB00934260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB009343C0>]}
+[0m20:30:41.008947 [debug] [MainThread]: Flushing usage events
+[0m20:30:42.591559 [debug] [MainThread]: An error was encountered while trying to flush usage events

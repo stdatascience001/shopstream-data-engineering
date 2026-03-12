@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: main
+    tables:
+      - name: orders
+        meta:
+          external_location: "d:/shopstream/data/bronze/orders.csv"
+      - name: customers
+        meta:
+          external_location: "d:/shopstream/data/bronze/customers.csv"
+      - name: products
+        meta:
+          external_location: "d:/shopstream/data/bronze/products.csv"
